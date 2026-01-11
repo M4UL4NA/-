@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Maulana Halim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d6efd;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background: #0b5ed7;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+        }
+
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills ul li {
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .projects .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .projects .card h3 {
+            margin-bottom: 10px;
+        }
+        .sertifikat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .sertifikat-grid img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        /* RESPONSIVE HP */
+        @media (max-width: 600px) {
+            .sertifikat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #0d6efd;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #0b5ed7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0d6efd;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="display:flex; align-items:center; justify-content:center; gap:30px; padding:40px 20px; flex-wrap:wrap;">
+        <img src="unch unch.jpg" alt="Foto Saya" style="width:180px; height:180px; object-fit:cover; border-radius:50%; border:4px solid #fff;">
+        <div style="text-align:left; max-width:400px;">
+            <h1>Maulana Halim</h1>
+            <p style="font-size:1.1rem;">| Mahasiswa |</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Pengalaman</a></li>
+            <li><a href="#sertifikat">Sertifikat</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah seorang mahasiswa di Universitas Negeri Surabaya Kampus 5 PSDKU Prodi Informatika, dan Saya seorang karyawan Kantor Jasa Penilai Publik Desmar, Susanto, Salman Dan Rekan. 
+            
+        </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skill</h2>
+        <ul>
+            <li>Leadership</li>
+            <li>Olahraga</li>
+            <li>Tidur</li>
+            <li>Makan</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Pengalaman</h2>
+        <div class="card">
+            <h3>Wakil ketua MPK 2022-2023</h3>
+            <p>
+                Bermanfaat untuk melatih kepemimpinan, tanggung jawab, komunikasi, kerja sama, kepercayaan diri, serta menambah pengalaman dan relasi organisasi sambil menyalurkan aspirasi siswa.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Ketua MPK 2023-2024</h3>
+            <p>
+                 Melatih kepemimpinan tingkat tinggi, tanggung jawab penuh, kemampuan mengambil keputusan penting, mengoordinasikan seluruh anggota, memimpin rapat, menjadi perwakilan resmi siswa di hadapan pihak sekolah, serta meningkatkan kepercayaan diri dan pengalaman organisasi.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Ketua Pramuka/Pradana 2024-2025</h3>
+            <p>
+                Melatih kepemimpinan, kemandirian, kedisiplinan, dan tanggung jawab, meningkatkan kemampuan mengatur kegiatan dan mengambil keputusan, memperkuat kerja sama tim, membangun mental yang tangguh, memperluas relasi, serta menanamkan nilai kepramukaan seperti gotong royong, kejujuran, dan jiwa sosial.
+            </p>
+        </div>
+         <div class="card">
+            <h3>Juara 3 O2SN Tingkat Kabupaten Madiun</h3>
+            <p>
+                meningkatkan prestasi nonakademik, melatih disiplin dan sportivitas, serta menjadi nilai tambah untuk jenjang pendidikan selanjutnya.
+            </p>
+        </div>
+         <div class="card">
+            <h3>Mengikuti Doubletrack Tata Boga</h3>
+            <p>
+               bermanfaat untuk membekali keterampilan kuliner, sertifikat kompetensi, dan peluang kerja atau wirausaha setelah lulus.
+            </p>
+        </div>
+          <div class="card">
+            <h3>Mengikuti satuan Karya Bhayangkara</h3>
+            <p>
+                melatih kedisiplinan, tanggung jawab, kepemimpinan, serta menumbuhkan wawasan kebhayangkaraan dan kepedulian terhadap keamanan masyarakat.
+            </p>
+        </div>
+    </section>
+
+    <section id="sertifikat" class="projects">
+    <h2>Sertifikat</h2>
+
+    <!-- GRID SERTIFIKAT -->
+
+    <div class="sertifikat-grid">
+        <div class="card" style="text-align:center;">
+            <img src="sertifikat o2sn.jpeg" alt="Sertifikat 1">
+            <p>Juara 3 O2SN Tingkat Kabupaten Madiun.</p>
+        </div>
+                <div class="card" style="text-align:center;">
+            <img src="sertifikat Ketua.png" alt="Sertifikat 2">
+            <p>Ketua MPK.</p>
+        </div>
+
+        <div class="card" style="text-align:center;">
+            <img src="sertifikat pradana.jpeg" alt="Sertifikat 3">
+            <p>Sertifikat Ketua Pramuka.</p>
+        </div>
+
+        
+        <div class="card" style="text-align:center;">
+            <img src="sertifikat diginesa figma.png" alt="Sertifikat 4">
+            <p>Sertifikat pelatihan Figma.</p>
+        </div>
+        <div class="card" style="text-align:center;">
+            <img src="sertifikat aksa.png" alt="Sertifikat 4">
+            <p>Sertifikat pelatihan dasar HTML & CSS.</p>
+        </div>
+        <div class="card" style="text-align:center;">
+            <img src="sertifikat dicoding.png" alt="Sertifikat 4">
+            <p>Sertifikat introdution to financial literacy.</p>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <div style="background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); max-width:500px;">
+
+        <div style="background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); max-width:500px;">
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/malnahlm_/?__pwa=1" target="_blank">@malnahlm_</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mmaulanahalim@gmail.com">mmaulanahalim@gmail.com</a></p>
+            <p><strong>No. HP:</strong> <a href="tel:+6285796862669">+62 857-9686-2669</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Maulana Halim. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
